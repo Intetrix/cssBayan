@@ -33,3 +33,29 @@ h1 {
   cursor: pointer;
   transition: 0.3s all;
 }
+.accordion__item:hover .accordion__icon {
+  transform: translateY(-50%) rotate(90deg);
+  transition: 0.9s;
+}
+
+.accordion__input:checked ~ label .accordion__icon {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.accordion__content {
+  /*width: 30vw;*/
+  display: none;
+  margin-top: 1em;
+}
+
+.accordion__img {
+  max-width: 100%;
+  display: block;
+}
+
+.accordion__input:checked ~ label .accordion__img {
+}
+
+.accordion__input:checked ~ label .accordion__content {
+  display: block;
+}
