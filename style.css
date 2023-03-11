@@ -1,0 +1,35 @@
+.container {
+  max-width: 50vw;
+  margin: 0 auto;
+}
+
+.accordion__input {
+  display: none;
+}
+
+h1 {
+  -webkit-text-stroke: 0.02em rgb(254, 254, 170);
+}
+
+.accordion__icon {
+  width: 2vw;
+  transform: translateY(-50%);
+  transition: 0.5s;
+}
+
+.accordion:hover {
+  -webkit-text-stroke: 0.01em rgb(254, 254, 170);
+}
+
+.accordion__item-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 1.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  box-shadow: 0 -5px 5px -5px #333;
+  cursor: pointer;
+  transition: 0.3s all;
+}
