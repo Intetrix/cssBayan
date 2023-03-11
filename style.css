@@ -83,3 +83,19 @@ span {
   cursor: pointer;
   transition: 0.3s all;
 }
+
+@media screen and (max-width: 1080px) {
+  html {
+    font-size: 15px;
+  }
+  @media screen and (max-width: 1180px) {
+    html {
+      font-size: 10px;
+    }
+  }
+  @media screen and (max-width: 568px) {
+    html {
+      font-size: 5px;
+    }
+  }
+}
