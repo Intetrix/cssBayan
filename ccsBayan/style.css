@@ -1,3 +1,7 @@
+body {
+  background: linear-gradient(45deg, #eecfba, #c5dde8);
+}
+
 .container {
   max-width: 50vw;
   margin: 0 auto;
@@ -17,14 +21,13 @@
 }
 
 h1 {
-  -webkit-text-stroke: 0.02em rgb(254, 254, 170);
+  -webkit-text-stroke: 0.02em rgb(200, 220, 228);
 }
 
 .accordion__item {
   width: 50vw;
 }
 span {
-  margin-top: 0.5em;
   width: 95%;
 }
 
@@ -34,6 +37,13 @@ span {
   transition: 0.5s;
   margin-left: auto;
   opacity: 0;
+}
+
+.accordion__item:active > label .accordion__icon {
+  border-top: dashed black;
+}
+.accordion__item:active > .accordion__item-title {
+  color: red;
 }
 
 .accordion__input:checked ~ label .accordion__icon {
@@ -63,6 +73,7 @@ span {
   align-items: center;
   flex-wrap: wrap;
   font-size: 1.5em;
+  font-weight: bold;
   padding-top: 1em;
   padding-bottom: 1em;
   box-shadow: 0 -5px 5px -5px #333;
@@ -76,12 +87,12 @@ span {
   }
   @media screen and (max-width: 1180px) {
     html {
-      font-size: 10px;
+      font-size: 12px;
     }
   }
   @media screen and (max-width: 568px) {
     html {
-      font-size: 5px;
+      font-size: 8px;
     }
   }
 }
@@ -92,7 +103,7 @@ span {
   }
 
   .accordion:hover {
-    -webkit-text-stroke: 0.01em rgb(254, 254, 170);
+    -webkit-text-stroke: 0.04em rgb(200, 220, 228);
   }
 
   label:hover .accordion__content {
