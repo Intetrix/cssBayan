@@ -52,14 +52,7 @@ span {
   display: block;
 }
 
-/*.accordion__input:checked ~ label .accordion__img {
-} */
-
 .accordion__input:checked ~ label .accordion__content {
-  width: inherit;
-  transform: scale(1);
-}
-label:hover .accordion__content {
   width: inherit;
   transform: scale(1);
 }
@@ -97,8 +90,14 @@ label:hover .accordion__content {
   .accordion:hover .accordion__icon {
     opacity: 1;
   }
+
   .accordion:hover {
     -webkit-text-stroke: 0.01em rgb(254, 254, 170);
+  }
+
+  label:hover .accordion__content {
+    width: inherit;
+    transform: scale(1);
   }
 
   .accordion__item:hover .accordion__icon {
