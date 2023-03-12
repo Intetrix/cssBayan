@@ -24,6 +24,7 @@ h1 {
   width: 50vw;
 }
 span {
+  margin-top: 0.5em;
   width: 95%;
 }
 
@@ -41,7 +42,6 @@ span {
 
 .accordion__content {
   width: 0;
-  margin-top: 1em;
   transform: scale(0.6);
   transition: all 0.5s linear;
   margin: 1rem auto 0 auto;
