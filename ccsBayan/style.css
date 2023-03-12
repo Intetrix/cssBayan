@@ -32,15 +32,7 @@ span {
   transform: translateY(-50%);
   transition: 0.5s;
   margin-left: auto;
-}
-
-.accordion:hover {
-  -webkit-text-stroke: 0.01em rgb(254, 254, 170);
-}
-
-.accordion__item:hover .accordion__icon {
-  transform: translateY(-50%) rotate(90deg);
-  transition: 0.9s;
+  opacity: 0;
 }
 
 .accordion__input:checked ~ label .accordion__icon {
@@ -97,5 +89,19 @@ span {
     html {
       font-size: 5px;
     }
+  }
+}
+
+@media (hover: hover) {
+  .accordion:hover .accordion__icon {
+    opacity: 1;
+  }
+  .accordion:hover {
+    -webkit-text-stroke: 0.01em rgb(254, 254, 170);
+  }
+
+  .accordion__item:hover .accordion__icon {
+    transform: translateY(-50%) rotate(90deg);
+    transition: 0.9s;
   }
 }
