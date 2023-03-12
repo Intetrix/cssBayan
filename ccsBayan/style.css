@@ -51,14 +51,15 @@ span {
   max-width: 100%;
   display: block;
 }
-/*
-.accordion__item:hover .accordion__content {
-}
 
-.accordion__input:checked ~ label .accordion__img {
+/*.accordion__input:checked ~ label .accordion__img {
 } */
 
 .accordion__input:checked ~ label .accordion__content {
+  width: inherit;
+  transform: scale(1);
+}
+label:hover .accordion__content {
   width: inherit;
   transform: scale(1);
 }
