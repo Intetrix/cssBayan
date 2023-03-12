@@ -27,12 +27,14 @@ h1 {
 .accordion__item {
   width: 50vw;
 }
+
 span {
-  width: 95%;
+  width: 94%;
 }
 
 .accordion__icon {
-  width: 5%;
+  width: 4%;
+  margin-top: 2%;
   transform: translateY(-50%);
   transition: 0.5s;
   margin-left: auto;
@@ -40,10 +42,11 @@ span {
 }
 
 .accordion__item:active > label .accordion__icon {
-  border-top: dashed black;
+  border-radius: 0.5em;
+  background-color: #9766ff;
 }
 .accordion__item:active > .accordion__item-title {
-  color: red;
+  color: #9766ff;
 }
 
 .accordion__input:checked ~ label .accordion__icon {
@@ -73,9 +76,8 @@ span {
   align-items: center;
   flex-wrap: wrap;
   font-size: 1.5em;
+  padding-top: 0.5em;
   font-weight: bold;
-  padding-top: 1em;
-  padding-bottom: 1em;
   box-shadow: 0 -5px 5px -5px #333;
   cursor: pointer;
   transition: 0.3s all;
@@ -104,6 +106,7 @@ span {
 
   .accordion:hover {
     -webkit-text-stroke: 0.04em rgb(200, 220, 228);
+    transition: 0.2s;
   }
 
   label:hover .accordion__content {
